@@ -1,7 +1,8 @@
 name: nav_bar_circles
 description: "A Flutter package that provides a customizable navigation bar with circular indicators. (my first package)"
 version: 0.0.1
-homepage:
+homepage: https://github.com/MarLiz-SanCam/widget_circle_navi
+repository: https://github.com/MarLiz-SanCam/widget_circle_navi
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
