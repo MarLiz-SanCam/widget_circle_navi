@@ -250,12 +250,10 @@ class _Case3State extends State<_Case3> {
 class _CaseRaw extends StatefulWidget {
   final String label;
   final List<PillNavItem> items;
-  final PillNavBarTheme theme;
 
   const _CaseRaw({
     required this.label,
     required this.items,
-    this.theme = const PillNavBarTheme(),
   });
 
   @override
@@ -284,7 +282,6 @@ class _CaseRawState extends State<_CaseRaw> {
               items: widget.items,
               currentIndex: _index,
               onTap: (i) => setState(() => _index = i),
-              theme: widget.theme,
             ),
           ),
         ],

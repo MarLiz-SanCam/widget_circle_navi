@@ -13,26 +13,29 @@ and the Flutter guide for
 # nav_bar_circles 
 floating circle-style navigation bar for flutter
 
-## Features
-
-Widget de navegación para aplicaciones entre 1 y 5 opciones, colores customizables.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+PillNavBar(
+  currentIndex: _index,
+  onTap: (i) => setState(() => _index = i),
+  items: const [
+    PillNavItem(icon: Icons.home,   label: 'Home'),
+    PillNavItem(icon: Icons.person, label: 'Perfil'),
+  ],
+)
 ```
 
-## Additional information
+## Customization
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+PillNavBar(
+  theme: PillNavBarTheme(
+    activeColor:       Colors.purple,
+    inactiveColor:     Colors.grey.shade800,
+    activeIconColor:   Colors.white,
+    inactiveIconColor: Colors.grey,
+  ),
+  ...
+)
+```
